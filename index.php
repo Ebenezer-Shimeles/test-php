@@ -1,5 +1,4 @@
 <?php
-
-  Header("Location: EN\index.php");
+  echo "Hello";
   die();
 ?>

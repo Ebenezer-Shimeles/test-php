@@ -1,3 +1,3 @@
 <?php
-   echo "The reup!";
+   echo "New kings";
 ?>

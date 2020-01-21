@@ -1,3 +1,5 @@
 <?php
-   echo "New kings";
+    require_once 'Bot_lib\main.php';
+    
+ 
 ?>

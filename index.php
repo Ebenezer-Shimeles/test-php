@@ -1,4 +1,3 @@
 <?php
-   echo "really the reup!";
- 
+   require getcwd()."\\Bot_lib\main.php";
 ?>

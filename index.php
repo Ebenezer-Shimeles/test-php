@@ -1,5 +1,4 @@
 <?php
-    require_once 'Bot_lib\main.php';
-    
+   echo "really the reup!";
  
 ?>

@@ -11,14 +11,8 @@ $dsn = "pgsql:"
     . "password=24ffc2055bd42bb4c9becf238f365f3941af690b16c641651fe7deb0020f1f83";
 
 $db = new PDO($dsn);
-$db->query("CREATE TABLE employees (
-    employee_id SERIAL,
-    last_name VARCHAR(30),
-    first_name VARCHAR(30),
-    title VARCHAR(50)
-);");
-$query = "SELECT employee_id, last_name, first_name, title "
-     . "FROM employees ORDER BY last_name ASC, first_name ASC";
+$query = "SELECT * "
+     . "FROM employees;";
 $result = $db->query($query);
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";

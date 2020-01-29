@@ -3,7 +3,6 @@
    $x  = new bot("941266680:AAEXLAnOlcQ3IqIlRFL_598_uSRYwLU2yzg");
    $update = json_decode(file_get_contents("php://input"), TRUE);
    $ST = "${update['update_id']}";
-   $ST = $message;
    $x->sendMessage("556659349", $ST);
 ?>
 

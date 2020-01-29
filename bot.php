@@ -4,7 +4,7 @@
    $update = json_decode(file_get_contents("php://input"), TRUE);
    $ST = "${update['update_id']}";
    if(isset($update['message'])){
-      $x->sendMessage("556659349", $update['message']['from']." sent: ".$update['message']['text']);
+      $x->sendMessage("556659349", $update['message']['from']['first_name'].$update['message']['from']['second_name']." sent: ".$update['message']['text']);
    }
    $x->sendMessage("556659349", $ST);
 ?>
